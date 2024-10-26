@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EF47ADE42CCCC5980001D226 /* FilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47ADE32CCCC5980001D226 /* FilterType.swift */; };
+		EF47ADE62CCCC59F0001D226 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47ADE52CCCC59F0001D226 /* PhotoPicker.swift */; };
+		EF47ADE82CCCC5A70001D226 /* FilteredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47ADE72CCCC5A70001D226 /* FilteredImage.swift */; };
+		EF47ADEA2CCCC5AF0001D226 /* PhotoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47ADE92CCCC5AF0001D226 /* PhotoEditorView.swift */; };
+		EF47ADEC2CCCC5B40001D226 /* PhotoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47ADEB2CCCC5B40001D226 /* PhotoEditorViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EF47ADC72CCCC52A0001D226 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +35,11 @@
 		EF47ADB62CCCC5290001D226 /* UrbanPhotoLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanPhotoLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF47ADC62CCCC52A0001D226 /* UrbanPhotoLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrbanPhotoLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF47ADD02CCCC52A0001D226 /* UrbanPhotoLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrbanPhotoLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF47ADE32CCCC5980001D226 /* FilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterType.swift; sourceTree = "<group>"; };
+		EF47ADE52CCCC59F0001D226 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		EF47ADE72CCCC5A70001D226 /* FilteredImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredImage.swift; sourceTree = "<group>"; };
+		EF47ADE92CCCC5AF0001D226 /* PhotoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorView.swift; sourceTree = "<group>"; };
+		EF47ADEB2CCCC5B40001D226 /* PhotoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +88,11 @@
 		EF47ADAD2CCCC5290001D226 = {
 			isa = PBXGroup;
 			children = (
+				EF47ADEB2CCCC5B40001D226 /* PhotoEditorViewModel.swift */,
+				EF47ADE92CCCC5AF0001D226 /* PhotoEditorView.swift */,
+				EF47ADE72CCCC5A70001D226 /* FilteredImage.swift */,
+				EF47ADE32CCCC5980001D226 /* FilterType.swift */,
+				EF47ADE52CCCC59F0001D226 /* PhotoPicker.swift */,
 				EF47ADB82CCCC5290001D226 /* UrbanPhotoLab */,
 				EF47ADC92CCCC52A0001D226 /* UrbanPhotoLabTests */,
 				EF47ADD32CCCC52A0001D226 /* UrbanPhotoLabUITests */,
@@ -186,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EF47ADB12CCCC5290001D226 /* Build configuration list for PBXProject "UrbanPhotoLab" */;
+			buildConfigurationList = EF47ADB12CCCC5290001D226 /* Build configuration list for PBXProject "Urban PhotoLab" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -236,6 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF47ADE62CCCC59F0001D226 /* PhotoPicker.swift in Sources */,
+				EF47ADEA2CCCC5AF0001D226 /* PhotoEditorView.swift in Sources */,
+				EF47ADE82CCCC5A70001D226 /* FilteredImage.swift in Sources */,
+				EF47ADEC2CCCC5B40001D226 /* PhotoEditorViewModel.swift in Sources */,
+				EF47ADE42CCCC5980001D226 /* FilterType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +422,9 @@
 				DEVELOPMENT_TEAM = 9D79AWT4TU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs photo library usage to store edited photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library usage to store edited photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +454,9 @@
 				DEVELOPMENT_TEAM = 9D79AWT4TU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs photo library usage to store edited photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library usage to store edited photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -521,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF47ADB12CCCC5290001D226 /* Build configuration list for PBXProject "UrbanPhotoLab" */ = {
+		EF47ADB12CCCC5290001D226 /* Build configuration list for PBXProject "Urban PhotoLab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF47ADD82CCCC52A0001D226 /* Debug */,
